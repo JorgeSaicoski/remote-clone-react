@@ -18,6 +18,12 @@ This project want to clone the https://remoteok.com/ for a interview test.
 - [ ] Verified, NEW and HOT Component
 - [ ] Data Fake Test
 
+## SCSS
+
+This project use SCSS to create the styles
+
+https://sass-lang.com/documentation/
+
 ## Future actions
 
 If you want to create a complete clone you should to continue the Redux folder. Notice that you need to create the services and connect it to a Backend.

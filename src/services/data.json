@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Nomad Health by Safety Wing",
+    "description": "Global health insurance for remote workers and nomads",
+    "requirements": null,
+    "verified": false,
+    "location": null,
+    "salary": null,
+    "extra": null,
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "blue"
+  },
+  {
+    "id": 2,
+    "title": "Marketing Designer",
+    "description": "Whimsical",
+    "requirements": ["Design", "Marketing"],
+    "verified": true,
+    "location": ["Europe", "United Kingdom", "United States", "Canada"],
+    "salary": null,
+    "extra": null,
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "yellow-white"
+  },
+  {
+    "id": 3,
+    "title": "PHP Developer",
+    "description": "Transax",
+    "requirements": ["Engineer", "Developer", "Full Stack"],
+    "verified": false,
+    "location": ["World Wide"],
+    "salary": "$50k-$120k",
+    "extra": null,
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "yellow"
+  },
+  {
+    "id": 4,
+    "title": "Site Reliability Engineer",
+    "description": "Sticker Mule",
+    "requirements": ["Engineer", "JavaScript", "Golang"],
+    "verified": false,
+    "location": ["World Wide"],
+    "salary": "$140k-$150k",
+    "extra": "new",
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "yellow-white"
+  },
+  {
+    "id": 5,
+    "title": "Software Engineer",
+    "description": "Sticker Mule",
+    "requirements": ["Engineer", "JavaScript", "React"],
+    "verified": false,
+    "location": ["World Wide"],
+    "salary": "$140k-$150k",
+    "extra": "new",
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "yellow-white"
+  },
+  {
+    "id": 6,
+    "title": "Senior Front End Developer",
+    "description": "Migaku",
+    "requirements": ["Engineer", "Senior", "Developer"],
+    "verified": false,
+    "location": ["World Wide"],
+    "salary": "$60k-$100k",
+    "extra": null,
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "pink"
+  }
+]
