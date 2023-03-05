@@ -6,41 +6,55 @@ const Job = ({jobs}) =>{
         const now = new Date();
         const diffTime = Math.abs(now - date);
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        return `${diffDays} days ago`;
+        return `${diffDays}d`;
     }
 
-    const locationsListeded= (locations) =>{
+    const locationsListeded= (job) =>{
+        let locations = job.location
         const jobLocations = []
         locations.forEach((local)=> {
             jobLocations.push(<li key={local}>{local}</li>)
         })
-        return <ul className="jobCardDescriptionLocations">{jobLocations}</ul>
+        if (job.salary){
+            jobLocations.push(<li key={job.salary}>{job.salary}</li>)
+        }
+        return <ul className="job-card-description-locations">{jobLocations}</ul>
     }
 
-    const requerimentListened = (requeriments) =>{
+    const requerimentListened = (requirement) =>{
         const jobRequeriments = []
-        requeriments.forEach((requeriment)=> {
-            jobRequeriments.push(<li key={requeriment}>{requeriment}</li>)
+        requirement.forEach((req)=> {
+            jobRequeriments.push(<li key={req}>{req}</li>)
         })
-        return <ul className="jobCardDescriptionLocations">{jobRequeriments}</ul>
+        return <ul className="job-card-requirements-requirement">{jobRequeriments}</ul>
     }
 
     return(
-        <tbody>
+        <tbody className="job-container">
         {jobs.map((job)=>{
             return(
-                <tr key={job.id} className={`${job.color} jobCard`}>
-                    <td className="jobCardLogo">{/* {<img src="job.image">} */}</td>
-                    <td className="jobCardDescription">
+                <tr key={job.id} className={`${job.color} job-card`}>
+                    <td className="job-card-logo">
+                        {/* {<img src="job.image">} */}
+                        <img src={require('../../../assets/images/logo.png')} alt="logo" />
+                    </td>
+                    <td className="job-card-description">
                         <h2>{job.title}{
                             job.verified? <span><p>VERIFIED</p></span>:null
                         }</h2>
-                        <h3>{job.description}</h3>
+                        <h3>{job.description}{
+                            job.extra?
+                                job.extra === "new"?
+                                    <p>NEW</p>:
+                                    <p>HOT</p>
+                                :
+                                null
+                        }</h3>
                         {
-                            job.location? locationsListeded(job.location):null
+                            job.location? locationsListeded(job):null
                         }
                     </td>
-                    <td className="jobCardRequeriments">
+                    <td className="job-card-requeriments">
                         {
                             job.requirements?
                                 requerimentListened(job.requirements)
@@ -48,8 +62,8 @@ const Job = ({jobs}) =>{
                                 null
                         }
                     </td>
-                    <td className="jobCardDays">{formatDate(job.created_at)}</td>
-                    <td className="jobCardButton"><button>Apply</button></td>
+                    <td className="job-card-days">{formatDate(job.created_at)}</td>
+                    <td className="job-card-button"><button>Apply</button></td>
                 </tr>
             )
         })}

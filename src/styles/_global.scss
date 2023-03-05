@@ -1,0 +1,50 @@
+.blue{
+  background-color: #0f0f7a;
+  & h2, h3, p{
+    color: $white;
+  }
+  & img{
+    box-shadow: none!important;
+    border: 2px $white solid;
+  }
+  & button{
+    background-color: $green;
+  }
+}
+
+.yellow{
+  background-color: $yellow;
+  & h2, h3, p{
+    color: white;
+  }
+  & button{
+    background-color: $green!important;
+    color: $yellow!important;
+  }
+}
+
+.yellow-white{
+  background-color: $yellow-white;
+  & h2, h3, p{
+    color: white;
+  }
+  & button{
+    background-color: $green!important;
+    color: $yellow-white!important;
+  }
+}
+
+.pink{
+  background-color: $pink;
+  & h2, h3, p{
+    color: white;
+  }
+  & .job-card-requirements-requirement {
+    & li {
+      border: none !important;
+      background-color: $white;
+      color: $pink !important;
+    }
+  }
+
+}

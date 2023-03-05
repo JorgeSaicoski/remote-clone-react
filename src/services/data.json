@@ -70,5 +70,29 @@
     "extra": null,
     "created_at": "2023-02-05T10:30:00.000Z",
     "color": "pink"
+  },
+  {
+    "id": 7,
+    "title": "Software Engineer Backend",
+    "description": "Sticker Mule",
+    "requirements": ["Developer", "JavaScript", "React"],
+    "verified": false,
+    "location": ["World Wide"],
+    "salary": "$130k-$150k",
+    "extra": null,
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "yellow-white"
+  },
+  {
+    "id": 8,
+    "title": "Freelancer Writer",
+    "description": "IAPWE",
+    "requirements": ["Content Write", "Non Tech", "Writting"],
+    "verified": true,
+    "location": ["World Wide"],
+    "salary": "$40k-$50k",
+    "extra": "hot",
+    "created_at": "2023-02-05T10:30:00.000Z",
+    "color": "blue"
   }
 ]
