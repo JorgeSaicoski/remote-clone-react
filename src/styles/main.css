@@ -18,7 +18,7 @@ table {
     width: 100%;
     margin: 1rem 0;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease-in-out; }
     .job-container .job-card:hover {
@@ -127,6 +127,10 @@ table {
       .job-container .job-card .job-card-button:hover {
         opacity: 1; }
 
+.table-header {
+  display: flex;
+  flex-direction: column; }
+
 .filter {
   display: flex;
   flex-direction: row;
@@ -180,6 +184,66 @@ table {
     .filter-sort select option {
       background-color: #fff;
       color: #555; }
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px; }
+  .categories img {
+    width: 16px;
+    height: 16px; }
+  .categories div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: #cccccc dotted 2px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-right: 10px; }
+  .categories p {
+    color: #cccccc; }
+
+.intro {
+  margin-bottom: 20px; }
+  .intro-text {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0.5px solid #cccccc; }
+    .intro-text p {
+      font-size: 18px;
+      font-weight: bold; }
+      .intro-text p span {
+        border-bottom: #393939 2px solid;
+        margin: 0 2px; }
+  .intro-buttons {
+    display: flex;
+    flex-direction: row; }
+    .intro-buttons button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      border-radius: 20px;
+      border: none;
+      font-size: 16px;
+      padding: 20px 10px;
+      font-weight: 800; }
+
+.trusted {
+  display: flex;
+  flex-direction: row;
+  font-weight: lighter;
+  justify-content: space-around;
+  margin: 25px 0; }
+  .trusted img {
+    height: 35px; }
 
 .header {
   background-image: url("../assets/images/valley-bg.webp");
@@ -237,7 +301,7 @@ table {
   margin: 0;
   padding: 0; }
 
-body {
+body, p {
   margin: 0;
   padding: 0; }
 
@@ -288,6 +352,12 @@ body {
   color: #393939; }
   .white h2, .white h3, .white p {
     color: #393939; }
+
+.white {
+  background-color: #ffffff;
+  color: #c0315c; }
+  .white h2, .white h3, .white p {
+    color: #c0315c; }
 
 table {
   margin-top: -75px; }

@@ -6,7 +6,7 @@ import Search from "./Search/Search";
 const List = () => {
     return(
         <table>
-            <thead><Search></Search></thead>
+            <Search></Search>
             <Job jobs={data}></Job>
         </table>
     )
