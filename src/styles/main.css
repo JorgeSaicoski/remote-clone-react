@@ -88,6 +88,8 @@ table {
           margin: 3.5px 7px 3.5px 0;
           background: #ffffff;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+          .job-container .job-card .job-card-description .job-card-description-locations li img {
+            height: 10px; }
     .job-container .job-card .job-card-requeriments {
       display: flex;
       flex-direction: row;
@@ -125,8 +127,123 @@ table {
       .job-container .job-card .job-card-button:hover {
         opacity: 1; }
 
+.filter {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-between; }
+  .filter img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px; }
+  .filter-select {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    .filter-select select {
+      width: 120px;
+      height: 40px;
+      padding: 10px;
+      margin-left: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 50px;
+      background-color: #ffffff;
+      font-size: 16px;
+      color: #393939;
+      font-weight: 600; }
+      .filter-select select img {
+        width: 25px;
+        height: 25px; }
+      .filter-select select:focus {
+        outline: none;
+        border-color: #007bff; }
+      .filter-select select option {
+        background-color: #ffffff;
+        color: #393939; }
+  .filter-sort select {
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #393939;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+    .filter-sort select:focus {
+      outline: none;
+      border-color: #0077cc; }
+    .filter-sort select option {
+      background-color: #fff;
+      color: #555; }
+
+.header {
+  background-image: url("../assets/images/valley-bg.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .header div {
+    width: 500px; }
+  .header-description {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 75px; }
+    .header-description div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0; }
+    .header-description h2, .header-description h3 {
+      font-size: 40px;
+      margin: 0;
+      font-weight: 200; }
+      .header-description h2 strong, .header-description h3 strong {
+        font-weight: 800; }
+    .header-description input {
+      width: 85%;
+      border-radius: 50px;
+      height: 60px; }
+  .header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 42px; }
+    .header-buttons button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 10px 0 0;
+      border-radius: 20px;
+      border: none;
+      font-size: 16px;
+      padding: 20px 10px;
+      font-weight: 800; }
+
+#home {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
 .blue {
-  background-color: #0f0f7a; }
+  background-color: #0f0f7a;
+  color: #ffffff; }
   .blue h2, .blue h3, .blue p {
     color: #ffffff; }
   .blue img {
@@ -159,5 +276,20 @@ table {
     border: none !important;
     background-color: #ffffff;
     color: #9838a1 !important; }
+
+.red {
+  background-color: #c0315c;
+  color: #ffffff; }
+  .red h2, .red h3, .red p {
+    color: #ffffff; }
+
+.white {
+  background-color: #ffffff;
+  color: #393939; }
+  .white h2, .white h3, .white p {
+    color: #393939; }
+
+table {
+  margin-top: -75px; }
 
 /*# sourceMappingURL=main.css.map */

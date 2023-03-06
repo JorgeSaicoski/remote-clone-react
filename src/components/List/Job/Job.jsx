@@ -13,7 +13,7 @@ const Job = ({jobs}) =>{
         let locations = job.location
         const jobLocations = []
         locations.forEach((local)=> {
-            jobLocations.push(<li key={local}>{local}</li>)
+            jobLocations.push(<li key={local}><img src={require('../../../assets/images/logo.png')} alt="logo" />{local}</li>)
         })
         if (job.salary){
             jobLocations.push(<li key={job.salary}>{job.salary}</li>)

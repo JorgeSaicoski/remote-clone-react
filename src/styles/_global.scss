@@ -1,5 +1,15 @@
+#home{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .blue{
   background-color: #0f0f7a;
+  color: $white;
   & h2, h3, p{
     color: $white;
   }
@@ -47,4 +57,23 @@
     }
   }
 
+}
+
+.red{
+  background-color: $red;
+  color: $white;
+  & h2, h3, p{
+    color: $white;
+  }
+}
+.white{
+  background-color: $white;
+  color: $dark;
+  & h2, h3, p{
+    color: $dark;
+  }
+}
+
+table{
+  margin-top: -75px;
 }

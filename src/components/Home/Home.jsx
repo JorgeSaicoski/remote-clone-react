@@ -1,10 +1,11 @@
 import React from "react";
 import List from "../List/List";
+import Header from "../Header/Header";
 
 const Home = () => {
     return (
-        <div>
-            <div id="header">Header</div>
+        <div id="home">
+            <Header></Header>
             <List></List>
         </div>
     )
