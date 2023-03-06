@@ -8,15 +8,15 @@ This project want to clone the https://remoteok.com/ for a interview test.
 
 ## Status Progress:
 - [x] Init
-- [ ] Home Component
-- [ ] Header Component
-- [ ] Search Component
-- [ ] List Job Component
-- [ ] Job Description Component
-- [ ] Job's Requirements Component
-- [ ] Job's Location Component
-- [ ] Verified, NEW and HOT Component
-- [ ] Data Fake Test
+- [x] Home Component
+- [x] Header Component
+- [x] Search Component
+- [x] List Job Component
+- [x] Job Description Component
+- [x] Job's Requirements Component
+- [x] Job's Location Component
+- [x] Verified, NEW and HOT Component
+- [x] Data Fake Test
 
 ## SCSS
 
